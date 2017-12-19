@@ -13,7 +13,7 @@ class ApiSpec extends  Specification{
 
 
     def setupSpec() {
-        client = new RESTClient('http://localhost:8080/persona/')
+        client = new RESTClient('http://35.192.53.219:9000/persona/')
     }
 
     def "test create person"(){
