@@ -1,22 +1,25 @@
 package com.velocity.caferrer.test.cases
 
+import co.com.velocitypartners.spock.extensions.restclient.RestClient
+import co.com.velocitypartners.spock.extensions.parameter.Parameter
 import org.junit.experimental.categories.Category
 import spock.lang.Shared
 import spock.lang.Specification
-import groovyx.net.http.RESTClient
 
 @Category(util.UnitTest)
 class ApiSpec extends  Specification{
 
     @Shared
+    @Parameter
+    @RestClient(baseUrl = "apiUrl",hardCoded = false)
     def client
 
 
     def setupSpec() {
-        client = new RESTClient('http://35.192.53.219:9000/persona/')
+
     }
 
-    def "test create person"(){
+    def "create person"(){
 
         setup:
             println "setup"
