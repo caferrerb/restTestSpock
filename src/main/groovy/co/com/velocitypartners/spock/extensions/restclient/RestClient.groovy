@@ -10,7 +10,7 @@ import java.lang.annotation.Target
 @Retention(RetentionPolicy.RUNTIME)
 @Target(ElementType.FIELD)
 @ExtensionAnnotation(RestClientExtension)
-@interface RestClient {
+public @interface RestClient {
 
     boolean hardCoded() default true
     String baseUrl()

@@ -1,7 +1,9 @@
 package com.velocity.caferrer.test.cases
 
-import co.com.velocitypartners.spock.extensions.restclient.RestClient
 import co.com.velocitypartners.spock.extensions.parameter.Parameter
+
+//import co.com.velocitypartners.spock.extensions.parameter.Parameter
+import co.com.velocitypartners.spock.extensions.restclient.RestClient
 import org.junit.experimental.categories.Category
 import spock.lang.Shared
 import spock.lang.Specification
