@@ -24,6 +24,9 @@ class ParameterExtension extends AbstractAnnotationDrivenExtension<Parameter> {
 @InheritConstructors
 class ParameterInterceptor extends AbstractMethodInterceptor{
 
+
+
+
     protected final FieldInfo field
     protected final Parameter annotation
 
@@ -45,6 +48,11 @@ class ParameterInterceptor extends AbstractMethodInterceptor{
 
 
         invocation.proceed()
+    }
+
+
+    public void metodoMaster(){
+        System.out.println("metodo de master....")
     }
 
     @Override
