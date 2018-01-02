@@ -40,11 +40,12 @@ class ParameterInterceptor extends AbstractMethodInterceptor{
         def specInstance=getSpec(invocation)
 
 
-
-
-
-
         invocation.proceed()
+    }
+
+
+    public void metodoBranch(){
+        System.out.println("metodo en branch")
     }
 
     @Override
